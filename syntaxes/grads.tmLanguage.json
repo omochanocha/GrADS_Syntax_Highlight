@@ -10,14 +10,30 @@
 		},
 		{
 			"include": "#comment"
+		},
+		{
+			"include": "#variable"
+		},
+		{
+			"include": "#execute"
 		}
 	],
 	"repository": {
 		"keywords": {
-			"patterns": [{
-				"name": "keyword.control.grads",
-				"match": "\\b(if|while|else|endif|endwhile)\\b"
-			}]
+			"patterns": [
+				{
+					"name": "keyword.control.grads",
+					"match": "\\b(if|while|else|endif|endwhile)\\b"
+				},
+				{
+					"name":"constant.numeric.grads",
+					"match": "\\d+(?:\\.\\d+)?(?:[eE][+-]?\\d+)?"
+				},
+				{
+					"name":"keyword.operator.grads",
+					"match": ".\\*|\\+|-|/"
+				}
+			]
 		},
 		"strings": {
 			"name": "string.quoted.double.grads",
@@ -41,6 +57,11 @@
 					"match": "#.*"
 				}
 			]
+		},
+		"variable":{
+
+		},
+		"execute":{
 		}
 	},
 	"scopeName": "source.gs"

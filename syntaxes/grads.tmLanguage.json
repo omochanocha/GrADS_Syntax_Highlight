@@ -7,13 +7,16 @@
 		},
 		{
 			"include": "#strings"
+		},
+		{
+			"include": "#comment"
 		}
 	],
 	"repository": {
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.grads",
-				"match": "\\b(if|while|for|return)\\b"
+				"match": "\\b(if|while|for|return|endif|endwhile)\\b"
 			}]
 		},
 		"strings": {
@@ -26,6 +29,18 @@
 					"match": "\\\\."
 				}
 			]
+		},
+		"comment":{
+			"patterns": [
+				{
+				"name": "comment.line.grads",
+				"match": "^\\*.*"
+			},
+			{
+				"name": "comment.line.grads",
+				"match": "#.*"
+			}
+		]
 		}
 	},
 	"scopeName": "source.gs"

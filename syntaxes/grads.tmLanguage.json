@@ -15,7 +15,10 @@
 			"include": "#variable"
 		},
 		{
-			"include": "#execute"
+			"include": "#executer"
+		},
+		{
+			"include": "#function"
 		}
 	],
 	"repository": {
@@ -61,7 +64,17 @@
 		"variable":{
 
 		},
-		"execute":{
+		"executer":{
+			"patterns": [
+				{
+					"name":"keyword.grads",
+					"match": "(?<=')set"
+				},
+				{
+					"name":"keyword.other.grads",
+					"match": "(?<=')(d\\s)"
+				}
+			]
 		}
 	},
 	"scopeName": "source.gs"

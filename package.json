@@ -1,0 +1,25 @@
+{
+    "name": "GrADS-Syntax-Highlight",
+    "displayName": "GrADS Syntax Highlight",
+    "description": "provide syntax highlighting for GrADS in Visual Studio Code",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.62.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "grads",
+            "aliases": ["GrADS", "grads"],
+            "extensions": [".gs"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "grads",
+            "scopeName": "source.gs",
+            "path": "./syntaxes/grads.tmLanguage.json"
+        }]
+    }
+}

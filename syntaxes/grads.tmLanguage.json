@@ -16,7 +16,7 @@
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.grads",
-				"match": "\\b(if|while|for|return|endif|endwhile)\\b"
+				"match": "\\b(if|while|else|endif|endwhile)\\b"
 			}]
 		},
 		"strings": {
@@ -33,14 +33,14 @@
 		"comment":{
 			"patterns": [
 				{
-				"name": "comment.line.grads",
-				"match": "^\\*.*"
-			},
-			{
-				"name": "comment.line.grads",
-				"match": "#.*"
-			}
-		]
+					"name": "comment.line.grads",
+					"match": "^\\*.*"
+				},
+				{
+					"name": "comment.line.grads",
+					"match": "#.*"
+				}
+			]
 		}
 	},
 	"scopeName": "source.gs"

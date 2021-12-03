@@ -30,11 +30,11 @@
 				},
 				{
 					"name":"constant.numeric.grads",
-					"match": "\\d+(?:\\.\\d+)?(?:[eE][+-]?\\d+)?"
+					"match": "\\b\\d+(?:\\.\\d+)?(?:[eE][+-]?\\d+)?\\b"
 				},
 				{
 					"name":"keyword.operator.grads",
-					"match": ".\\*|\\+|-|/"
+					"match": "(?<='.*)(\\*|\\+|\\-|/)"
 				}
 			]
 		},

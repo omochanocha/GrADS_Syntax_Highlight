@@ -9,16 +9,16 @@
 			"include": "#strings"
 		},
 		{
-			"include": "#comment"
+			"include": "#comments"
 		},
 		{
-			"include": "#variable"
+			"include": "#variables"
 		},
 		{
-			"include": "#executer"
+			"include": "#executers"
 		},
 		{
-			"include": "#function"
+			"include": "#support-functions"
 		}
 	],
 	"repository": {
@@ -26,7 +26,7 @@
 			"patterns": [
 				{
 					"name": "keyword.control.grads",
-					"match": "\\b(if|while|else|endif|endwhile|say|set|d)\\b"
+					"match": "\\b(if|while|else|endif|endwhile|say|set|d|open|sdfopen)\\b"
 				},
 				{
 					"name":"constant.numeric.grads",
@@ -34,7 +34,7 @@
 				},
 				{
 					"name":"keyword.operator.grads",
-					"match": "(?<='.*)(\\*|\\+|\\-|/)"
+					"match": "(?<='.*)(\\*)|\\+|\\-|/|=|%"
 				}
 			]
 		},
@@ -62,7 +62,13 @@
 			]
 		},
 		"variable":{
+			"patterns": [
+				{
+					"name":"variable.language.grads",
+					"match": "\\b(lon|lat|lev|time)\\b"
 
+				}
+			]
 		},
 		"executer":{
 			"patterns": [

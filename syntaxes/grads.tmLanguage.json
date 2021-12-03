@@ -49,7 +49,7 @@
 				}
 			]
 		},
-		"comment":{
+		"comments":{
 			"patterns": [
 				{
 					"name": "comment.line.grads",
@@ -61,16 +61,15 @@
 				}
 			]
 		},
-		"variable":{
+		"variables":{
 			"patterns": [
 				{
 					"name":"variable.language.grads",
 					"match": "\\b(lon|lat|lev|time)\\b"
-
 				}
 			]
 		},
-		"executer":{
+		"executers":{
 			"patterns": [
 				{
 					"name":"keyword.grads",
@@ -82,14 +81,13 @@
 				}
 			]
 		},
-		"function":{
+		"support-functions":{
 			"patterns": [
 				{
 					"name":"support.function.grads",
 					"match": "\\b(ave|mean|aave|tloop|max|min|maxloc|minloc|vint|cdiff|hcurl|hdivg|maskout|const|tcorr|tregr|pow|smth9|lterp|exp|log|mag)\\b"
 				}
 			]
-
 		}
 	},
 	"scopeName": "source.gs"

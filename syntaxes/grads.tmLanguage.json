@@ -18,7 +18,7 @@
 			"include": "#executers"
 		},
 		{
-			"include": "#support-functions"
+			"include": "#support"
 		}
 	],
 	"repository": {
@@ -26,7 +26,8 @@
 			"patterns": [
 				{
 					"name": "keyword.control.grads",
-					"match": "\\b(if|while|else|endif|endwhile|say|set|d|open|sdfopen)\\b"
+					"match": "\\b(if|while|else|endif|endwhile|say|set|d|display|open|sdfopen)\\b"
+
 				},
 				{
 					"name":"constant.numeric.grads",
@@ -35,6 +36,11 @@
 				{
 					"name":"keyword.operator.grads",
 					"match": "(?<='.*)(\\*)|\\+|\\-|/|=|%"
+				},
+				{
+					"comment": "色、描画系",
+					"name":"constant.other.grads",
+					"match": "\\b(cbarn|xcbar|color|gxprint|draw)\\b"
 				}
 			]
 		},
@@ -69,19 +75,7 @@
 				}
 			]
 		},
-		"executers":{
-			"patterns": [
-				{
-					"name":"keyword.grads",
-					"match": "(?<=')set"
-				},
-				{
-					"name":"keyword.other.grads",
-					"match": "(?<=')(d\\s)"
-				}
-			]
-		},
-		"support-functions":{
+		"support":{
 			"patterns": [
 				{
 					"name":"support.function.grads",

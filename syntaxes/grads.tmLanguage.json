@@ -27,19 +27,18 @@
 				{
 					"name": "keyword.control.grads",
 					"match": "\\b(if|while|else|endif|endwhile|say|set|d|display|open|sdfopen)\\b"
-
 				},
 				{
-					"name":"constant.numeric.grads",
+					"name": "constant.numeric.grads",
 					"match": "\\b\\d+(?:\\.\\d+)?(?:[eE][+-]?\\d+)?\\b"
 				},
 				{
-					"name":"keyword.operator.grads",
+					"name": "keyword.operator.grads",
 					"match": "(?<='.*)(\\*)|\\+|\\-|/|=|%"
 				},
 				{
 					"comment": "色、描画系",
-					"name":"constant.other.grads",
+					"name": "constant.other.grads",
 					"match": "\\b(cbarn|xcbar|color|gxprint|draw)\\b"
 				}
 			]
@@ -55,7 +54,7 @@
 				}
 			]
 		},
-		"comments":{
+		"comments": {
 			"patterns": [
 				{
 					"name": "comment.line.grads",
@@ -67,18 +66,18 @@
 				}
 			]
 		},
-		"variables":{
+		"variables": {
 			"patterns": [
 				{
-					"name":"variable.language.grads",
+					"name": "variable.language.grads",
 					"match": "\\b(lon|lat|lev|time)\\b"
 				}
 			]
 		},
-		"support":{
+		"support": {
 			"patterns": [
 				{
-					"name":"support.function.grads",
+					"name": "support.function.grads",
 					"match": "\\b(ave|mean|aave|tloop|max|min|maxloc|minloc|vint|cdiff|hcurl|hdivg|maskout|const|tcorr|tregr|pow|smth9|lterp|exp|log|mag)\\b"
 				}
 			]

@@ -1,65 +1,24 @@
-# GrADS-Syntax-Highlight README
+# GrADS Syntax Highlight
 
-This is the README for your extension "GrADS-Syntax-Highlight". After writing up a brief description, we recommend including the following sections.
+本拡張機能は`.gs`ファイルに対してsyntax highlight(コード中のキーワードに従って色を付ける機能)を提供するものである。ただしあくまでsyntax highlightのみである、したがってコードの正しさを保証するものではない（つまり、例えばある行がコメントアウトされていてもその行が実行されてしまう可能性もある）のでGrADSで実行する前に必ず各自で確認していただきたい。また、そのようなバグに遭遇した場合や私の知らない重要単語でハイライトさせるべき！という意見があればぜひ樋田に伝えてほしい、できる限り早く対応します。
 
-## Features
+## インストールと使い方
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+使用するには以下の手順に従う。
 
-For example if there is an image subfolder under your extension project workspace:
+**※GrADSを使うのは主に研究室の計算機で、またVS Codeで`.gs`ファイルを書く人は`Remote-SSH`も使っている人だと思うので以下の手順ではそれを想定している。`Remote-SSH`についてわからない人は他の詳しい人に聞いてほしい。**
 
-\!\[feature X\]\(images/feature-x.png\)
+1. 以下のコマンドで`storm`の`/work1/toida/`以下にある`grads-syntax-highlight`をあなたのホームディレクトリ以下の`vscode-server/extensions`ディレクトリにコピーする。
+   * `cp -r /work1/toida/grads-syntax-highlight /home/[YOUR USER NAME]/.vscode-server/extensions/`
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+2. `Ctrl+Shift+X`で拡張機能一覧を開き、`grads-syntax-highlight`が表示されていることを確認する。
 
-## Requirements
+3. 適当な`.gs`ファイルを開き、右下のCRLF(あるいはLF)と書かれた場所の1つ右の言語モードの選択をクリックし、`GrADS`を選択する。表示されない場合はVSCodeを再起動すると表示されるはずである。そうすると、今開いている`.gs`ファイルのコードがハイライトされる。
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
-
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
+4. 以降は`.gs`ファイルを開けば自動でハイライトしてくれるはずであるが、されない場合は言語モードの選択で`GrADS`を逐一選択してほしい。
 
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
+### 1.0.0 (2021/12/06)
 
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
------------------------------------------------------------------------------------------------------------
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+Initial release of GrADS Syntax Highlight

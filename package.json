@@ -1,5 +1,5 @@
 {
-    "name": "GrADS-Syntax-Highlight",
+    "name": "grads-syntax-highlight",
     "displayName": "GrADS Syntax Highlight",
     "description": "provide syntax highlighting for GrADS in Visual Studio Code",
     "version": "0.0.1",

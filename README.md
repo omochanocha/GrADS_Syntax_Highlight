@@ -4,6 +4,14 @@
 
 さらにこの拡張機能を改良すればnamelist.inputや.ctlファイル、その他拡張機能がなくハイライトされないファイルをハイライトさせることも可能である。興味がある人はやってみると(正規表現の勉強にもなって)おもしろいかもしれない。
 
+参考URL
+
+* [github.devでマイナー言語のシンタックスハイライト](https://www.slideshare.net/kyusque/vscode-conference-japan-2021-kyusque)
+* [vscodeで自作のシンタックスハイライト・スニペット拡張機能を作る](https://qiita.com/OrukRed/items/03f0e38e0f8553ee35d2#%E6%8B%A1%E5%BC%B5%E6%A9%9F%E8%83%BD%E3%82%92%E5%8F%96%E3%82%8A%E8%BE%BC%E3%82%80)
+* [Visual Studio CodeやAtomのシンタックスハイライト拡張機能を作る](https://qiita.com/maxfie1d/items/51af2984b7a628c41a94)
+* [TextMateでの正規表現ルールの日本語訳](https://macromates.com/manual/ja/regular_expressions)
+* [nameの命名規則](https://macromates.com/manual/en/language_grammars)
+
 ## インストールと使い方
 
 使用するには以下の手順に従う。

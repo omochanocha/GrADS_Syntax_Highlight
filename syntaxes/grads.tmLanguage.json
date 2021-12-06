@@ -26,7 +26,7 @@
 			"patterns": [
 				{
 					"name": "keyword.control.grads",
-					"match": "\\b(if|while|else|endif|endwhile|say|set|d|display|open|sdfopen)\\b"
+					"match": "\\b(if|while|else|endif|endwhile|say|set|d|display|open|sdfopen|c)\\b"
 				},
 				{
 					"name": "constant.numeric.grads",
@@ -34,23 +34,12 @@
 				},
 				{
 					"name": "keyword.operator.grads",
-					"match": "(?<='.*)(\\*)|\\+|\\-|/|=|%"
+					"match": "(?<=('|\").*)(\\*)|\\+|\\-|/|=|%"
 				},
 				{
 					"comment": "色、描画系",
 					"name": "constant.other.grads",
 					"match": "\\b(cbarn|xcbar|color|gxprint|draw)\\b"
-				}
-			]
-		},
-		"strings": {
-			"name": "string.quoted.double.grads",
-			"begin": "\"",
-			"end": "\"",
-			"patterns": [
-				{
-					"name": "constant.character.escape.grads",
-					"match": "\\\\."
 				}
 			]
 		},

@@ -6,14 +6,14 @@
 
 使用するには以下の手順に従う。
 
-**※GrADSを使うのは主に研究室の計算機で、またVS Codeで`.gs`ファイルを書く人は`Remote-SSH`も使っている人だと思うので以下の手順ではそれを想定している。`Remote-SSH`についてわからない人は他の詳しい人に聞いてほしい。**
+**※またVS Codeで`.gs`ファイルを書く人は`Remote-SSH`も使っている人だと思うので以下の手順ではそれを想定し、stormの環境で書いている。他の計算機でも使いたい場合はscp等を使ってgrads-syntax-highlightを転送すれば動くはずである。`Remote-SSH`についてわからない人は他の詳しい人に聞いてほしい。**
 
 1. 以下のコマンドで`storm`の`/work1/toida/`以下にある`grads-syntax-highlight`をあなたのホームディレクトリ以下の`vscode-server/extensions`ディレクトリにコピーする。
    * `cp -r /work1/toida/grads-syntax-highlight /home/[YOUR USER NAME]/.vscode-server/extensions/`
 
 2. `Ctrl+Shift+X`で拡張機能一覧を開き、`grads-syntax-highlight`がインストールされていることを確認する。
 
-3. 最初は適当な`.gs`ファイルを開き、右下のCRLF(あるいはLF)と書かれた場所の1つ右の言語モードの選択(下の画像でMarkdownと書かれている場所)をクリックし、`'.gs'に対するファイルの関連付けの構成...`をクリックし、`GrADS`を選択する。`GrADS`が表示されない場合はVSCodeを再起動すると表示されるはずである。そうすると、今開いている`.gs`ファイルのコードがハイライトされる。
+3. VSCodeを再起動した後、最初は適当な`.gs`ファイルを開き、右下のCRLF(あるいはLF)と書かれた場所の1つ右の言語モードの選択(下の画像でMarkdownと書かれている場所)をクリックし、`'.gs'に対するファイルの関連付けの構成...`をクリックし、`GrADS`を選択する。今開いている`.gs`ファイルのコードがハイライトされる。
    ![参考画像](https://user-images.githubusercontent.com/76525239/144768604-86f39a7a-2f8f-4262-94b4-72cb29d572ed.png)
 
 4. 以降は`.gs`ファイルを開けば自動でハイライトしてくれるはずであるが、されない場合は上記手順3を再度行ってほしい。

@@ -6,9 +6,6 @@
 			"include": "#keywords"
 		},
 		{
-			"include": "#strings"
-		},
-		{
 			"include": "#comments"
 		},
 		{

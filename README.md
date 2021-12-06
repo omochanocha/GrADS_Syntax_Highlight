@@ -13,7 +13,7 @@
 1. 以下のコマンドで`storm`の`/work1/toida/`以下にある`grads-syntax-highlight`をあなたのホームディレクトリ以下の`vscode-server/extensions`ディレクトリにコピーする。
    * `cp -r /work1/toida/grads-syntax-highlight /home/[YOUR USER NAME]/.vscode-server/extensions/`
 
-2. `Ctrl`(Macの人は`Command`)`+Shift+X`で拡張機能一覧を開き、`grads-syntax-highlight`がインストールされていることを確認する（おそらく下の方にあるはずである）。
+2. `Ctrl`(Macの人は`Command`)`+Shift+X`で拡張機能一覧を開き、`grads-syntax-highlight`がstormの欄にインストールされていることを確認する（おそらく下の方にあるはずである）。
 
 3. VSCodeを再起動した後、最初は適当な`.gs`ファイルを開き、右下のCRLF(あるいはLF)と書かれた場所の1つ右の言語モードの選択(下の画像ではMarkdownと書かれている場所、デフォルトでは`プレーンテキスト`となっているはず)をクリックし、その後出てくるウィンドウで`'.gs'に対するファイルの関連付けの構成...`をクリックし、`GrADS`を選択する。すると今開いている`.gs`ファイルのコードがハイライトされる。
    ![参考画像](https://user-images.githubusercontent.com/76525239/144768604-86f39a7a-2f8f-4262-94b4-72cb29d572ed.png)

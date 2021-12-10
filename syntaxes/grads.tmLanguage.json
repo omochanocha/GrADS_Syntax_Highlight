@@ -23,7 +23,15 @@
 			"patterns": [
 				{
 					"name": "keyword.control.grads",
-					"match": "\\b(if|while|else|endif|endwhile|say|set|d|display|open|sdfopen|c)\\b"
+					"match": "\\b(if|while|else|endif|endwhile|say|set|display|open|sdfopen|reset|run|define|draw)\\b"
+				},
+				{
+					"name":"keyword.operator.grads",
+					"match": "(?<=^')(c)(?='$)"
+				},
+				{
+					"name":"keyword.operator.grads",
+					"match": "(?<=^')(d)"
 				},
 				{
 					"name": "constant.numeric.grads",
@@ -56,7 +64,7 @@
 			"patterns": [
 				{
 					"name": "variable.language.grads",
-					"match": "\\b(lon|lat|lev|time)\\b"
+					"match": "\\b(lon|lat|lev|time|x|y|z|t)\\b"
 				}
 			]
 		},

@@ -27,11 +27,11 @@
 				},
 				{
 					"name":"keyword.operator.grads",
-					"match": "(?<=^')(c)(?='$)"
+					"match": "(?<=^')c(?='$)"
 				},
 				{
 					"name":"keyword.operator.grads",
-					"match": "(?<=^')(d)"
+					"match": "(?<=^')d"
 				},
 				{
 					"name": "constant.numeric.grads",
@@ -39,7 +39,7 @@
 				},
 				{
 					"name": "keyword.operator.grads",
-					"match": "(?<=('|\").*)(\\*)|\\+|\\-|/|=|%"
+					"match": "(?<=('|\").*)(\\*)(?=.*('|\"))|\\+|\\-|/|=|%"
 				},
 				{
 					"comment": "色、描画系",
@@ -52,11 +52,11 @@
 			"patterns": [
 				{
 					"name": "comment.line.grads",
-					"match": "^\\*.*"
+					"match": "(^|(?<=;))\\*.*"
 				},
 				{
 					"name": "comment.line.grads",
-					"match": "#.*"
+					"match": "(^#|(?<=;)#).*"
 				}
 			]
 		},

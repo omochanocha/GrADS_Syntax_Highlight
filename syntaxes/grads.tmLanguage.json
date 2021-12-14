@@ -27,7 +27,7 @@
 				},
 				{
 					"name":"keyword.operator.grads",
-					"match": "(?<=^')c(?='$)"
+					"match": "(?<=^')c"
 				},
 				{
 					"name":"keyword.operator.grads",

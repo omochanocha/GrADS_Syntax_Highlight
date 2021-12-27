@@ -27,15 +27,15 @@
 				},
 				{
 					"name":"keyword.operator.grads",
-					"match": "(?<=(^'|\"))c"
+					"match": "(?<=(^'|\"))c(?=('|\"))"
 				},
 				{
 					"name":"keyword.operator.grads",
-					"match": "(?<=(^'|\"))d"
+					"match": "(?<=(^'|\"))d(?=\\s)"
 				},
 				{
 					"name": "constant.numeric.grads",
-					"match": "\\b\\d+(?:\\.\\d+)?(?:[eE][+-]?\\d+)?\\b"
+					"match": "\\b\\d+(?:\\.\\d+)?(?:\\.[eE][+-]?\\d+)?\\b"
 				},
 				{
 					"name": "keyword.operator.grads",

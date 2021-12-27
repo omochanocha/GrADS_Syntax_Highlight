@@ -2,7 +2,7 @@
     "name": "grads-syntax-highlight",
     "displayName": "GrADS Syntax Highlight",
     "description": "provide syntax highlighting for GrADS in Visual Studio Code",
-    "version": "1.2.0",
+    "version": "1.2.1",
     "engines": {
         "vscode": "^1.62.0"
     },

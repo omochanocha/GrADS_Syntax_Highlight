@@ -49,3 +49,7 @@ Initial release of GrADS Syntax Highlight
 ### 1.2.1 (2021/12/27)
 
 軽微なバグの修正
+
+### 1.2.2 (2022/01/22)
+
+指数表記のバグの修正

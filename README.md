@@ -22,8 +22,6 @@
 
 ## Release Notes
 
----
-
 ### 1.0.0 (2021/12/06)
 
 Initial release of GrADS Syntax Highlight
@@ -45,8 +43,6 @@ Initial release of GrADS Syntax Highlight
 指数表記のバグの修正
 
 ## 参考URL
-
----
 
 * [github.devでマイナー言語のシンタックスハイライト](https://www.slideshare.net/kyusque/vscode-conference-japan-2021-kyusque)
 * [vscodeで自作のシンタックスハイライト・スニペット拡張機能を作る](https://qiita.com/OrukRed/items/03f0e38e0f8553ee35d2#%E6%8B%A1%E5%BC%B5%E6%A9%9F%E8%83%BD%E3%82%92%E5%8F%96%E3%82%8A%E8%BE%BC%E3%82%80)
